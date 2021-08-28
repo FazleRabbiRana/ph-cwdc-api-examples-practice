@@ -8,6 +8,9 @@ const searchFood = async () => {
 	// clear input
 	searchField.value = '';
 
+	// clear previous detail
+	document.getElementById('single-item-details').textContent = '';
+
 	// load data if search field not empty
 	if (searchText == '') {
 		document.getElementById('empty-search-alert').innerText = 'Please type something to search.';
