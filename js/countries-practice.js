@@ -13,7 +13,7 @@ const displayCountries = countries => {
 		singleCountry.innerHTML = `
 			<h3>${country.name}</h3>
 			<p><b>Capital:</b> ${country.capital}</p>
-			<button onclick="loadCountryByName('${country.name}')" class="btn btn-success">Details</button>
+			<button onclick="loadCountryByName('${country.name}')" class="btn btn-success w-100">Details</button>
 		`;
 		countriesContainer.appendChild(singleCountry);
 	});
