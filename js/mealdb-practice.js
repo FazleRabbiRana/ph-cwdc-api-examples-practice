@@ -36,7 +36,6 @@ const displaySearchError = error => {
 // display search result
 const displaySearchResult = meals => {
 	const searchResultContainer = document.getElementById('search-result');
-
 	// clear previous search result
 	searchResultContainer.textContent = '';
 
@@ -65,6 +64,12 @@ const displaySearchResult = meals => {
 			`;
 			searchResultContainer.appendChild(singleContainer);
 		});
+
+		// show api location
+		const apiUrl = `https://www.themealdb.com/api.php`;
+		const apiLocationTag = document.getElementById('api-location');
+		apiLocationTag.innerHTML = `API collected from: <a href="${apiUrl}" target="_blank"><cite>${apiUrl}</cite></a>`;
+
 		// search result notice
 		const notice = document.getElementById('result-notice');
 		if(meals.length > 1) {

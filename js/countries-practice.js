@@ -6,6 +6,12 @@ const loadCountries = () => {
 loadCountries();
 
 const displayCountries = countries => {
+	// show api location
+	const apiUrl = `https://restcountries.eu/`;
+	const apiAnchorTag = document.getElementById('api-location');
+	apiAnchorTag.innerHTML = `<cite>${apiUrl}</cite>`;
+	apiAnchorTag.setAttribute('href', apiUrl);
+
 	const countriesContainer = document.getElementById('countries');
 	countries.forEach(country => {
 		const singleCountry = document.createElement('div');
