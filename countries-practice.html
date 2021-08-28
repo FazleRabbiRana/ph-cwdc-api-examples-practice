@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Countries | API Examples Practice</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+	<style>
+		body {
+			font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+		header {
+			margin-bottom: 320px;
+		}
+		.country-details-wrapper {
+			padding: 12px;
+			background: rgba(25, 25, 25, 0.9);
+			color: #fff;
+			width: clamp(30%, 400px, 60vw);
+			height: auto;
+			position: fixed;
+			top: 180px;
+			left: 15px;
+		}
+		.country-details-wrapper p {
+			margin-bottom: 0.5rem;
+		}
+		#countries {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		}
+		.country {
+			border: 2px solid tomato;
+			margin: 10px;
+			padding: 15px;
+			border-radius: 10px;
+		}
+		h2, h3 {
+			margin: 0 0 10px;
+		}
+		img {
+			max-width: 150px;
+		}
+	</style>
+</head>
+<body class="bg-light">
+	<header class="py-4">
+		<div class="container text-center">
+			<h1 class="text-success">API Examples (Module-33) Practice</h1>
+
+			<nav class="d-flex justify-content-center mt-4">
+				<a href="./index.html" class="btn btn-primary mx-2">Home</a>
+				<a href="./buddies-practice.html" class="btn btn-primary mx-2">Buddies Page</a>
+				<a href="./countries-practice.html" class="btn btn-primary mx-2 active">Countries Page</a>
+				<a href="./mealdb-practice.html" class="btn btn-primary mx-2">Meals Page</a>
+			</nav>
+		</div>
+	</header>
+
+	<!-- country details -->
+	<section class="country-details-wrapper">
+		<h3 class="text-decoration-underline">Country Details</h3>
+		<div id="country-detail"></div>
+	</section>
+
+	<!-- all countries -->
+	<h3 class="text-center">Countries</h3>
+	<div id="countries"></div>
+
+
+	<!-- script -->
+	<script src="./js/countries-practice.js"></script>
+</body>
+</html>

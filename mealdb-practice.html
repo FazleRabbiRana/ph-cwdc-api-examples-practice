@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MealDB | API Examples Practice</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+	<header class="py-4">
+		<div class="container text-center">
+			<h1 class="text-success">API Examples (Module-33) Practice</h1>
+
+			<nav class="d-flex justify-content-center mt-5">
+				<a href="./index.html" class="btn btn-primary mx-2">Home</a>
+				<a href="./buddies-practice.html" class="btn btn-primary mx-2">Buddies Page</a>
+				<a href="./countries-practice.html" class="btn btn-primary mx-2">Countries Page</a>
+				<a href="./mealdb-practice.html" class="btn btn-primary mx-2 active">Meals Page</a>
+			</nav>
+		</div>
+	</header>
+
+	<!-- search input area -->
+	<h2 class="text-center text-success my-4">Search your favorite food</h2>
+	<div class="container my-3">
+		<div class="input-group mb-3 w-75 mx-auto">
+			<input type="text" id="search-field" class="form-control" placeholder="Search the food you want" aria-label="Search the food you want" aria-describedby="button-search">
+			<button onclick="searchFood()" class="btn btn-outline-secondary" type="button" id="button-search">Search</button>
+		</div>
+		<p id="empty-search-alert" class="text-danger text-center"></p>
+	</div>
+
+	<!-- error message -->
+	<div>
+		<p id="error-message" class="text-danger text-center">Something went wrong, please try again later.</p>
+	</div>
+
+	<!-- single item details -->
+	<div id="single-item-details" class="container w-75 my-3"></div>
+
+	<!-- search result -->
+	<div class="container my-3">
+		<p id="result-notice" class="h3 py-4 text-center"></p>
+		<div id="search-result" class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4"></div>
+	</div>
+
+
+	<!-- script -->
+	<script src="./js/mealdb-practice.js"></script>
+</body>
+</html>
